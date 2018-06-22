@@ -1,0 +1,353 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.inner-wrap {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* 侧边栏开始 */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.sidebar .textbook {
+    background-color: #f7fefe;
+    height: 50px;
+}
+
+.sidebar .textbook .button {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.sidebar .textbook .dropdown-menu {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    border: none;
+    border-top: 1px solid #ccc;
+    border-radius: 0;
+    box-shadow: 0 0 0;
+}
+
+.sidebar .textbook .arrow {
+    display: inline-block;
+    width: 18px;
+    height: 10px;
+    background-image: url('../lib/images/icon_xiala.png')
+}
+
+/* 左边栏章节列表样式 */
+.sidebar .chapter {
+    flex: 1;
+    margin-top: 10px;
+    background-color: #f7fefe;
+    overflow: auto;
+}
+
+.sidebar .chapter .panel {
+    background-color: #f7fefe;
+    border: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    box-shadow: 0 0 0;
+    border-bottom: 1px solid #999;
+}
+
+.sidebar .chapter .panel-heading {
+    padding: 0px;
+    padding-left: 20px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.sidebar .chapter .panel-heading h4 {
+    height: 100%;
+}
+
+.sidebar .chapter .panel-heading h4 div {
+    height: 100%;
+    line-height: 50px;
+    font-size: 0px;
+    vertical-align: middle;
+}
+
+.sidebar .chapter .panel-heading h4 span {
+    font-size: 18px;
+}
+
+.sidebar .panel-title>div::before {
+    display: inline-block;
+    content: '';
+    width: 12px;
+    height: 7px;
+    margin-right: 10px;
+    background-image: url('../lib/images/icon_zhangjie.png');
+}
+
+.panel-group .panel-heading + .panel-collapse > .panel-body {
+    border-top: 1px solid #999;
+    padding: 0;
+}
+
+.chapter .panel-body .title {
+    position: relative;
+    height: 40px;
+    padding-left: 56px;
+    line-height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.chapter .panel-body .title i {
+    position: absolute;
+    display: inline-block;
+    left: 20px;
+    top: 12px;
+    width: 16px;
+    height: 16px;
+    background-image: url('../lib/images/icon_press_jiamulu.png');
+}
+
+.chapter .panel-body .title .unfold {
+    background-image: url('../lib/images/icon_press_jianmulu.png');
+}
+
+.chapter .panel-body .sec-list {
+    padding-left: 56px;
+    font-size: 16px;
+}
+
+.chapter .panel-body .sec-list li {
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #f0f0f0;
+}
+/* 侧边栏样式结束 */
+
+
+/* 右边内容区域开始 */
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+}
+
+
+/* 顶部筛选 */
+.content .fliter {
+    position: relative;
+    height: 50px;
+    background-color: #f7fefe;
+}
+
+.fliter .grade,
+.fliter .state {
+    float: left;
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.fliter .grade {
+    padding-left: 20px;
+}
+
+.fliter  i {
+    position: absolute;
+    top: 23px;
+    right: -20px;
+    width: 10px;
+    height: 6px;
+    background-image: url('../lib/images/icon_normal_banji.png');
+}
+
+/* 任务状态筛选 */
+.fliter .state {
+    margin-left: 80px;
+}
+
+
+/* 筛选列表 */
+.fliter .pop-list {
+    position: absolute;
+    width: 100%;
+    top: 52px;
+    z-index: 10;
+    background-color: #f7fefe;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3)
+}
+
+.fliter .pop-list ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 0 30px;
+}
+
+.fliter .pop-list li {
+    position: relative;
+    width: 162px;
+    height: 44px;
+    font-size: 14px;
+    color: #333;
+    line-height: 44px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    cursor: pointer;
+}
+
+.fliter .pop-list .choose {
+    color: #33b6ae;
+    border-color: #33b6ae;
+}
+
+li.choose::after {
+    position: absolute;
+    content: '';
+    width: 17px;
+    height: 15px;
+    right: 0;
+    bottom: 0;
+    background-image: url('../lib/images/img_xuankuang.png');
+}
+
+/* 展示区 */
+.content .shown {
+    position: relative;
+    display: flex;
+    flex: 1;
+    margin-top: 10px;
+    padding: 30px 30px 60px 0;
+    background-color: #f7fefe;
+}
+
+/* 时间轴 */
+.shown .timeline {
+    width: 80px;
+    height: 100%;
+}
+
+.shown .timeline::before {
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 608px;
+    left: 37px;
+    top: 30px;
+    background-color: #c2c2c2;
+}
+
+.shown .timeline .year {
+    position: absolute;
+    top: 30px;
+    left: 14px;
+    text-align: center;
+    line-height: 46px;
+    font-size: 14px;
+    color: #f7fefe;
+    width: 46px;
+    height: 46px;
+    z-index: 5;
+    box-shadow: 0 0 5px #ccc;
+    background-image: url('../lib/images/img_shijianzhou.png');
+    border-radius: 23px;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    -ms-border-radius: 23px;
+    -o-border-radius: 23px;
+}
+
+.shown .timeline .month {
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    color: #33b6ae;
+}
+
+
+
+.shown .timeline .dot {
+    position: relative;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #f7fefe;
+}
+
+.shown .timeline .dot::before {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    top: 1px;
+    left: 1px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #33b6ae;
+}
+
+/* 列表区 */
+.shown .task-list {
+    flex: 1;
+    background-color: skyblue;
+}
+
+.shown .task-list ul {
+    width: 100%;
+    height: 100%;
+}
+
+.shown .task-list .task-item {
+    float: left;
+    width: 490px;
+    height: 212px;
+    border: 1px solid #000;
+    background-color: #f3ffff;
+}

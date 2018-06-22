@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>任务</title>
+    <link rel="stylesheet" href="../lib/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/task.css">
+    <script src="../lib/myjs/jquery-3.1.1.min.js"></script>
+    <script src="../lib/myjs/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- 整体布局 -->
+    <div class="wrap">
+        <div class="inner-wrap">
+            <!-- 侧边栏 -->
+            <div class="sidebar">
+                <!-- 选择教材 -->
+                <div class="textbook">
+                    <div class="dropdown">
+                        <div class="button dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                            一年级语法人教版B201702(上)
+                            <span class="arrow"></span>
+                        </div>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">AAAAAAAAAAAAAAAAAAA</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">BBBBBBBBBBBBBBBBBBB</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">CCCCCCCCCCCCCCCCCCC</a>
+                            </li>
+                            <li role="presentation">
+                                <a role="menuitem" tabindex="-1" href="#">DDDDDDDDDDDDDDDDDDD</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 章节区块 -->
+                <div class="chapter">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel">
+                            <!-- 一级折叠菜单 -->
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <div data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <span>识字（一）</span>
+                                    </div>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <ul class="chap-list">
+                                        <li>
+                                            <!-- 二级折叠菜单 -->
+                                            <div class="title">
+                                                <i data-toggle="collapse" data-target="#sec-one"></i>
+                                                <span class="text">1 一去二三里</span>
+                                                <span class="count">(10)</span>
+                                            </div>
+                                            <div id="sec-one" class="collapse">
+                                                <ul class="sec-list">
+                                                    <li>2.1 操场上超市</li>
+                                                    <li>2.2 语文园地</li>
+                                                    <li>2.3 有趣的游戏</li>
+                                                    <li>2.4 上中下</li>
+                                                    <li>2.5 人口手</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="title">
+                                                <i data-toggle="collapse" data-target="#sec-two"></i>
+                                                <span class="text">1 一去二三里</span>
+                                                <span class="count">(10)</span>
+                                            </div>
+                                            <div id="sec-two" class="collapse">
+                                                <ul class="sec-list">
+                                                    <li>2.1 操场上超市</li>
+                                                    <li>2.2 语文园地</li>
+                                                    <li>2.3 有趣的游戏</li>
+                                                    <li>2.4 上中下</li>
+                                                    <li>2.5 人口手</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="title">
+                                                <i data-toggle="collapse" data-target="#sec-three"></i>
+                                                <span class="text">1 一去二三里</span>
+                                                <span class="count">(10)</span>
+                                            </div>
+                                            <div id="sec-three" class="collapse">
+                                                <ul class="sec-list">
+                                                    <li>2.1 操场上超市</li>
+                                                    <li>2.2 语文园地</li>
+                                                    <li>2.3 有趣的游戏</li>
+                                                    <li>2.4 上中下</li>
+                                                    <li>2.5 人口手</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="panel">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <div class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <span>识字（二）</span>
+                                    </div>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <ul class="chap-list">
+                                        <li>
+                                            <div class="title">
+                                                <i data-toggle="collapse" data-target="#sec-four"></i>
+                                                <span class="text">1 一去二三里</span>
+                                                <span class="count">(10)</span>
+                                            </div>
+                                            <div id="sec-four" class="collapse">
+                                                <ul class="sec-list">
+                                                    <li>2.1 操场上超市</li>
+                                                    <li>2.2 语文园地</li>
+                                                    <li>2.3 有趣的游戏</li>
+                                                    <li>2.4 上中下</li>
+                                                    <li>2.5 人口手</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="title">
+                                                <i data-toggle="collapse" data-target="#sec-five"></i>
+                                                <span class="text">1 一去二三里</span>
+                                                <span class="count">(10)</span>
+                                            </div>
+                                            <div id="sec-five" class="collapse">
+                                                <ul class="sec-list">
+                                                    <li>2.1 操场上超市</li>
+                                                    <li>2.2 语文园地</li>
+                                                    <li>2.3 有趣的游戏</li>
+                                                    <li>2.4 上中下</li>
+                                                    <li>2.5 人口手</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="title">
+                                                <i data-toggle="collapse" data-target="#sec-six"></i>
+                                                <span class="text">1 一去二三里</span>
+                                                <span class="count">(10)</span>
+                                            </div>
+                                            <div id="sec-six" class="collapse">
+                                                <ul class="sec-list">
+                                                    <li>2.1 操场上超市</li>
+                                                    <li>2.2 语文园地</li>
+                                                    <li>2.3 有趣的游戏</li>
+                                                    <li>2.4 上中下</li>
+                                                    <li>2.5 人口手</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <div class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <span>读拼音识字</span>
+                                    </div>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <ul class="chap-list">
+                                        <li>
+                                            <div class="title">
+                                                <i data-toggle="collapse" data-target="#sec-seven"></i>
+                                                <span class="text">1 一去二三里</span>
+                                                <span class="count">(10)</span>
+                                            </div>
+                                            <div id="sec-seven" class="collapse">
+                                                <ul class="sec-list">
+                                                    <li>2.1 操场上超市</li>
+                                                    <li>2.2 语文园地</li>
+                                                    <li>2.3 有趣的游戏</li>
+                                                    <li>2.4 上中下</li>
+                                                    <li>2.5 人口手</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="title">
+                                                <i data-toggle="collapse" data-target="#sec-eight"></i>
+                                                <span class="text">1 一去二三里</span>
+                                                <span class="count">(10)</span>
+                                            </div>
+                                            <div id="sec-eight" class="collapse">
+                                                <ul class="sec-list">
+                                                    <li>2.1 操场上超市</li>
+                                                    <li>2.2 语文园地</li>
+                                                    <li>2.3 有趣的游戏</li>
+                                                    <li>2.4 上中下</li>
+                                                    <li>2.5 人口手</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="title">
+                                                <i data-toggle="collapse" data-target="#sec-nine"></i>
+                                                <span class="text">1 一去二三里</span>
+                                                <span class="count">(10)</span>
+                                            </div>
+                                            <div id="sec-nine" class="collapse">
+                                                <ul class="sec-list">
+                                                    <li>2.1 操场上超市</li>
+                                                    <li>2.2 语文园地</li>
+                                                    <li>2.3 有趣的游戏</li>
+                                                    <li>2.4 上中下</li>
+                                                    <li>2.5 人口手</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 内容区域 -->
+            <div class="content">
+                <!-- 筛选按钮 -->
+                <div class="fliter" id="fliter">
+                    <div class="grade collapsed" data-toggle="collapse" data-target="#grade" aria-expanded="false">
+                        <span>全部班级</span>
+                        <i></i>
+                    </div>
+
+                    <div class="state collapsed" data-toggle="collapse" data-target="#state" aria-expanded="false">
+                        <span>任务状态</span>
+                        <i></i>
+                    </div>
+
+                    <div class="pop-list">
+                        <div class="collapse" id="grade" aria-expanded="false">
+                            <ul>
+                                <li class="choose">小学一年级（31班）</li>
+                                <li>小学一年级（32班）</li>
+                                <li>小学一年级（33班）</li>
+                                <li>小学一年级（34班）</li>
+                                <li>小学一年级（35班）</li>
+                                <li>小学一年级（36班）</li>
+                                <li>小学一年级（37班）</li>
+                                <li>小学一年级（38班）</li>
+                                <li>小学一年级（39班）</li>
+                                <li>小学一年级（40班）</li>
+                            </ul>
+                        </div>
+
+                        <div class="collapse" id="state" aria-expanded="false">
+                            <ul>
+                                <li class="choose">草稿</li>
+                                <li>已完成</li>
+                                <li>完成中</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <!-- 展示区 -->
+                <div class="shown">
+                    <div class="timeline">
+                        <div class="year">2018</div>
+                        <div class="month">
+                            <span>12</span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                    <div class="task-list">
+                        <ul>
+                            <li class="task-item"></li>
+                            <li class="task-item"></li>
+                            <li class="task-item"></li>
+                            <li class="task-item"></li>
+                            <li class="task-item"></li>
+                            <li class="task-item"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $(function () {
+            // 侧边栏样式切换
+            $('.panel-body i').on('click', function () {
+                $(this).toggleClass('unfold');
+                $(this).parent().toggleClass('active');
+            });
+            $('#state').collapse('hide');
+            $('.grade').on('click', function () {
+                $('#state').collapse('hide');
+            });
+            $('.state').on('click', function () {
+                $('#grade').collapse('hide');
+            });
+            $('.collapse li').on('click', function () {
+                $(this).toggleClass('choose');
+            });
+        });
+    </script>
+</body>
+
+</html>
