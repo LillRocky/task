@@ -142,6 +142,7 @@ body {
 }
 
 .chapter .panel-body .sec-list li {
+    padding-left: 15px;
     height: 40px;
     line-height: 40px;
     cursor: pointer;
@@ -256,7 +257,7 @@ li.choose::after {
     display: flex;
     flex: 1;
     margin-top: 10px;
-    padding: 30px 30px 60px 0;
+    padding-bottom: 30px;
     background-color: #f7fefe;
 }
 
@@ -335,11 +336,16 @@ li.choose::after {
 
 /* 列表区 */
 .shown .task-list {
+    padding-right: 30px;
+    padding-top: 30px;
     flex: 1;
-    background-color: skyblue;
+    overflow-y: auto;
 }
 
 .shown .task-list ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
     height: 100%;
 }
@@ -347,7 +353,32 @@ li.choose::after {
 .shown .task-list .task-item {
     float: left;
     width: 490px;
+    margin-bottom: 20px;
     height: 212px;
-    border: 1px solid #000;
+    border: 1px solid #dbdbdb;
     background-color: #f3ffff;
+}
+
+.shown .create-task a {
+    display: block;
+    width: 100%;
+    padding-top: 87px;
+    height: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: #33b6ae;
+}
+
+.shown .create-task .create-task-icon {
+    display: inline-block;
+    margin-right: 10px;
+    width: 38px;
+    height: 38px;
+    vertical-align: middle;
+    background-image: url('../lib/images/icon_tianjia.png');
+}
+
+.shown .create-task .create-task-text {
+    display: inline-block;
+    line-height: 38px;
 }
